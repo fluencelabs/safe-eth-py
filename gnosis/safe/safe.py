@@ -577,7 +577,7 @@ class Safe(SafeCreator, ContractBase, metaclass=ABCMeta):
                     contract.functions.getThreshold(),
                     contract.functions.VERSION(),
                 ],
-                from_address=self.address,
+                # from_address=self.address,
                 block_identifier=block_identifier,
                 raise_exception=False,
             )
